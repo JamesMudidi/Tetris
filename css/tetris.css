@@ -1,0 +1,203 @@
+body {
+    background: #37addc;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+}
+
+body article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+nav {
+  padding-left: 0.6em;
+  padding-top: 1em;
+}
+
+nav br {
+  margin: 0.2em;
+}
+
+
+.heading {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 1em;
+    padding: 0 0 0.1em 0;
+  }
+  
+.info {
+      margin: 15px 0 0;
+      color: #000;
+      font-size: 1.5em;
+      padding: 0 0 0.1em 0;
+  }
+    
+.message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 1em;
+  }
+  
+.message a {
+    color: #b3b3b3;
+    text-decoration: none;
+  }
+  
+.message a:hover {
+    color: #37addc;
+    text-decoration: none;
+  }
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+canvas {
+  background-color: LemonChiffon;
+  width: 100%;
+}
+
+#upcoming {
+  background-color:
+    /* #DBAAAA; */
+    Lavender;
+  outline: solid black thin;
+}
+
+#score,
+#rows {
+  font-style: normal;
+  font-weight: bold;
+}
+
+#score {
+  color: red;
+}
+
+#rows {
+  color: darkGreen;
+}
+
+img.help,
+img.close,
+img.settings,
+img.download {
+  width: 2em;
+  height: 2em;
+}
+
+img.close {
+  display: none;
+}
+
+img.help{
+    cursor: pointer;
+  }
+  
+img.close {
+  cursor: pointer;
+}
+
+img.download {
+    cursor: pointer;
+  }
+
+img.settings {
+  cursor: pointer;
+}
+  
+#help img {
+  vertical-align: middle;
+  width: 1em;
+  height: 1em;
+  background-color: Brown;
+  color: red;
+}
+
+#help {
+  display: none;
+  position: absolute;
+  left: 4em;
+  right: 4em;
+  top: 2em;
+  padding: 2em;
+  background-color: white;
+  border: solid black 2px;
+  cursor: pointer;
+}
+
+#help b {
+  font-size: 120%;
+}
+
+#help p {
+  margin-bottom: 0.8em;
+}
+
+#help hr {
+  margin-top: 1.8em;
+}
+
+#help h1 {
+  text-align: center;
+  font-size: 120%;
+  margin-bottom: 1em;
+}
+
+code {
+  background-color: yellow;
+  color: red;
+  font-family: sans-serif, "Arial";
+  border: solid thin black;
+  padding: 0px 3px 0px 3px;
+}
+
+#game {
+  display: flex;
+  position: relative;
+  flex-flow: row;
+  background-color: snow;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#left {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 24px;
+  margin-right: 24px;
+  white-space: nowrap;
+  height: 100%;
+}
+
+#left p {
+  text-align: left;
+}
+
+#board {
+  width: 10em;
+  height: 20em;
+}
+
+#upcoming {
+  width: 8em;
+  height: 6em;
+}
+
+#checkboxClutter {
+  margin-right: 0.2em;
+}

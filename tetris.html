@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tetris &VerticalLine; Play</title>
+    <script src="js/settings.js"></script>
+    <link rel="stylesheet" href="css/tetris.css">
+</head>
+
+<body>
+    <nav id="toolbar">
+        <a href="index.html"><img alt="Home" class="help" src="images/home.svg" /></a><br>
+        <img alt="Help" id="id.help" class="help" src="images/help.svg" title="Help" /><br>
+        <img alt="Close Help" id="id.close-help" class="close" src="images/close.svg" title="Help" />
+        <img alt="Settings" id="id.settings" class="settings" src="images/settings.svg" title="Settings" />
+    </nav>
+    <article id="main">
+        <div id="game">
+            <div id="left">
+                <div>
+                    <p class="heading" id="prompt">Click anywhere or Press <span id="statusKeyName"></span><br />to
+                        <span id="statusVerb"></span></p>
+                    <br />
+                    <p class="info" id="paused">Game Paused</p>
+                </div>
+                <canvas id="upcoming" title="Next tile"></canvas>
+                <div>
+                    <p>Score: <em id="score"></em></p>
+                    <p>Rows: <em id="rows"></em></p>
+                    <br>
+                    <br>
+                </div>
+                <div id="sectionClutter" title="Clutter created at the start of the game">
+                    <label for="checkboxClutter" accesskey="U"><input type="checkbox" id="checkboxClutter"
+                            checked="checked" />Cl<u>u</u>tter</label>&ThinSpace;
+                    <select id="clutterSelector"></select>
+                </div>
+            </div>
+            <div id="right"><canvas id="board"></canvas></div>
+        </div>
+    </article>
+
+    <div id="help">
+        <h1>Tetris v.&thinsp;<span id="version"></span></h1>
+        <p>Use arrow keys <b id="help.left"></b>, <b id="help.right"></b>, <b id="help.down"></b>: to move the tile</p>
+        <p>Use <b id="help.rotateRight"></b>: to rotate the tile clockwise <b>&orarr;</b></p>
+        <p>Ctrl+<b id="help.rotateLeft"></b>: to rotate the tile anti-clockwise <b>&olarr;</b></p>
+        <p>Use the <b id="help.dropDown"></b><b>bar</b> Key: to immediately drop the tile down</p>
+        <p>Use the <b id="help.startPauseContinue"></b> or <b>Return</b> key: to start, pause and continue the game</p>
+        <p>Use the <b id="help.cancelGame"></b> Key: to cancel game</p>
+        <p>Use the <b id="help.settings"></b> Key: to access the game's settings menu</p>
+        <p>Use the <b id="help.help"></b> Key: to access and hide the game's help menu</p>
+        <hr />
+        <p>Please see: <a href="LICENSE.txt">License</a>, <a href="http://en.wikipedia.org/wiki/Tetris">about original
+                game</a>, <a href="http://www.codeproject.com/Articles/876475/Tetris-On-Canvas">original
+                publication</a>.</p>
+        <br />
+        <p><small>To close this help window, Press F1 or Click anywhere in this window</small></p>
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
