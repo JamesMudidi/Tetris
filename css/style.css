@@ -6,12 +6,12 @@ body {
 }
 
 a {
-    color: #fff;
+    color: #b3b3b3;
     text-decoration: none;
   }
   
 a:hover {
-    color: rgb(226, 226, 226);
+    color: #37addc;
     text-decoration: none;
   }
 
